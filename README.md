@@ -1,28 +1,20 @@
 # WebScrap
 
-
-
 Simple web scrap for https://www.e-drpciv.ro/ Questions and answers
 This is needed for my driving license so I thought it would be great to have all the question in one place
-**TODO: use google sheets instead of CSV**
-**TODO: use the result to create an automatic answering machine**
 
 
-It will owerwrite the test.csv every time when run
-## Installation
+It will owerwrite the test.csv every time when run.
+The test.csv and the test_output folder should be created previously.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `web_scrap` to your list of dependencies in `mix.exs`:
+Use the following command to run from iex
+WebScrap.create_csv("https://www.e-drpciv.ro/intrebare/1")
 
-```elixir
-def deps do
-  [
-    {:web_scrap, "~> 0.1.0"}
-  ]
-end
-```
+## Todo:
+- [ ] Phoenix app to control inputs running etc
+- [ ] create the folders and files dynamically based on input
+- [ ] use google sheets instead of CSV
+- [ ] use the result to create an automatic answering app
+- [ ] load the images as well as currently the question based on images doesn't help (should be challenging with the answering app to match the image)
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/web_scrap>.
 
